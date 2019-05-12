@@ -7,6 +7,7 @@ from . import views
 app_name = 'portfolio'
 urlpatterns=[
     url(r'^$', views.index, name='index'),
+    url(r'^projects/$', views.projects, name='projects'),
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

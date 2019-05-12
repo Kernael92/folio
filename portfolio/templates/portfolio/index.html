@@ -8,5 +8,98 @@
 
 {% block content %}
 {{block.super}}
-<h1>Portfolio</h1>
+<div class="container">
+  <div class="block">
+    <img class="img" src="../static/portfolio/images/model.jpg" alt="">
+    <p class="text1">Kernael Apuko</p>
+    <p class="text2">Full Stack Developer</p>
+
+  </div>
+
+</div><br><br>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2>About</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-justify">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime soluta similique quae eum explicabo vel reprehenderit distinctio saepe temporibus ipsam, iste. Ullam magnam ducimus harum, consequuntur facilis, hi</p>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+<section id="projects" class="projects">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2>Projects</h2>
+    </div>
+  </div>
+  <div class="nav row">
+    <div class="item blue  col-6 col-md-3">
+      <div class="green">
+        <img src="https://maleplasticsurgerynewyork.com/wp-content/uploads/2013/10/tuxedo-guy.png" alt="" class="img">
+      </div>  
+      <div class="caption">
+        <h3 class="title">item title</h3>
+        <p class="text">item description and price...</p>
+        <button class="btn btn-default">clickeme</button>        
+      </div>
+    </div><!-- /.col  -->
+    <div class="item green col-6 col-md-3">
+      <div class="red">
+        <img src="http://www.redcamelsolutions.com/wp-content/uploads/revslider/revslider_casanova1/man.png" alt="" class="img">
+      </div>  
+      <div class="caption">
+        <h3 class="title">item title</h3>
+        <p class="text">item description and price...</p>
+        <button class="btn btn-default">clickeme</button>        
+      </div>
+    </div><!-- /.col  -->
+    <div class="item red col-6 col-md-3">
+      <div class="">
+        <img src="https://www.3wisemen.co.nz/media/catalog/product/c/r/crop_side_1_1-2.png" alt="" class="img">
+      </div>  
+      <div class="caption">
+        <h3 class="title">item title</h3>
+        <p class="text">item description and price...</p>
+        <button class="btn btn-default">clickeme</button>        
+      </div>
+    </div><!-- /.col  -->
+    <div class="item gray col-6 col-md-3">
+      <div class="gray">
+        <img src="https://cdn.shopify.com/s/files/1/1158/4104/products/ScreenShot_20160312122207_1024x1024.png" alt="" class="img">
+      </div>  
+      <div class="caption">
+        <h3 class="title">item title</h3>
+        <p class="text">item description and price...</p>
+        <button class="btn btn-default">clickeme</button>        
+      </div>
+    </div><!-- /.col  -->
+  </div><!-- /.row  -->    
+</section><br><br><br><br>
+<section id="about" class="about">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2>Skills</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-justify">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime soluta similique quae eum explicabo vel reprehenderit distinctio saepe temporibus ipsam, iste. Ullam magnam ducimus harum, consequuntur facilis, hi</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
 {% endblock content %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script scr="{% static 'portfolio/js/index.js'%}"></script>
+{% endblock scripts %}

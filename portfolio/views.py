@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import get_object_or_404, render
+from .models import Projects
  
 
 # Create your views here.
@@ -9,6 +10,6 @@ from django.shortcuts import get_object_or_404, render
 def index(request):
     return render(request, 'portfolio/index.html')
 
-def projects(request, projects_id):
-    project = get_object_or_404(Projects, pk=projects_id)
-    return render(request, 'portfolio/projects.html', {'project': project})
+def projects(request):
+    project_list = Projects.objects.all()
+    return render(request, 'portfolio/projects.html', {'project': project_list})
