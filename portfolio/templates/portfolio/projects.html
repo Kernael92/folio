@@ -9,8 +9,9 @@
 {% block content %}
 {{block.super}}
 {% if project_list %}
-    {% for project in project_list%}
-        <h1>{{project.title}}</h1>
+    {% for projects in project_list%}
+        <h1>{{projects.title}}</h1>
+        <img src="{{projects.image.url}}" class="img-responsive" alt="image">
     {% endfor %}
 {% else %}
 <p>No projects are available</p>

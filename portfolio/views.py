@@ -12,4 +12,4 @@ def index(request):
 
 def projects(request):
     project_list = Projects.objects.all()
-    return render(request, 'portfolio/projects.html', {'project': project_list})
+    return render(request, 'portfolio/projects.html', {'project_list': project_list})
