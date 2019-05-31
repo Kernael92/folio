@@ -4,4 +4,3 @@ venv/
 .Vscode/
 __pycache__/
 *.pyc
-settings.py

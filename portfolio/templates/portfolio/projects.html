@@ -2,60 +2,17 @@
 {% load static %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'portfolio/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/project.css' %}">
   {% endblock %}
 
 
 {% block content %}
 {{block.super}}
-<!-- {% if project_list %}
+{% if project_list %}
     {% for project in project_list%}
         <h1>{{project.title}}</h1>
     {% endfor %}
 {% else %}
 <p>No projects are available</p>
-{% endif %} -->
-    <div class="slidesContainer">
-        <div id="slide01" data-slide='s1' class="slide slide01 active">
-            <div class="bcg"></div>
-            <div class="slideContent">
-                <h1>Project 1 title</h1>
-                <p>Short description of the project</p>
-            </div>
-        </div>
-        <div id="slide02" data-slide='s2' class="slide slide02">
-            <div class="bcg"></div>
-            <div class="slideContent">
-                <h1>Project 2 title</h1>
-                <p>Short description of the project</p>
-            </div>
-        </div>
-        <div id="slide03" data-slide='s3' class="slide slide03">
-            <div class="bcg"></div>
-            <div class="slideContent">
-                <h1>Project 3 title</h1>
-                <p>Short description of the project</p>
-            </div>
-        </div>
-        <div id="slide04" data-slide='s4' class="slide slide04">
-            <div class="bcg"></div>
-            <div class="slideContent">
-                <h1>Project 4 title</h1>
-                <p>Short description of the project</p>
-            </div>
-        </div>
-        <ul class="nav">
-            <li class="active"><a id="s0" href="#slide01">Project 1</a></li>
-            <li><a id="s1" href="#slide02">Project 2</a></li>
-            <li><a id="s2" href="#slide03">Project 3</a></li>
-            <li><a id="s3" href="#slide04">Project 4</a></li>
-        </ul>
-    </div>
-
-{% endblock content %}
-
-{% block script %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script scr="{% static 'portfolio/js/project.js'%}"></script>
-{% endblock script %}
+{% endif %}
+{% endblock content %}   
